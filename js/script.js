@@ -5,6 +5,13 @@ const ageSel = document.querySelector("#ageSelect");
 
 const confirmBtn = document.querySelector("#generateBtn");
 
+
+//Time Var
+let date = new Date();
+let today = `La data odierna: ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+
+
+
 let disc, price, discPrice;
 
 confirmBtn.addEventListener("click",
@@ -23,6 +30,8 @@ confirmBtn.addEventListener("click",
         else{
             disc = 1;
         }
+
+
         price = kmValue * 0.21;
         discPrice = price * disc;
         console.log(price, discPrice);

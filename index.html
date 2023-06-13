@@ -9,29 +9,40 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class = "bg-danger">
 
     <main>
-        <div class="container">
+        <div class="container-fluid">
+            <h1 class = "text-white text-center">
+                    CALCOLA IL PREZZO DEL TUO BIGLIETTO
+            </h1>
 
-            <div class="prezzo-biglieto">
+            <div class="prezzo-biglieto  bg-white p-5 rounded">
                 <form action="">
-
-                <input type="text" name="" id="nameInput">
-                <input type="number" name="" id="kmInput">
-                <select name="" id="ageSelect">
-                    <option value="Minorenne">Minorenne</option>
-                    <option value="Maggiorenne">Maggiorenne</option>
-                    <option value="Over65">Over 65</option>
-                </select>
-
-                <button type="button" id = "generateBtn">Genera</button>
-                <button type="button">Annulla</button>
-
-
+                    <div class="d-flex justify-content-around align-items-center mb-5">
+                        <label class = "px-2" for="nameInput">
+                            Nome e Cognome
+                        </label>
+                        <input class = "mx-1 rounded border border-danger" type="text" name="" id="nameInput">
+                        <label class = "px-2" for="kmInput">
+                            Km:
+                        </label>
+                        <input class = "mx-1 rounded border border-danger" type="number" name="" id="kmInput">
+                        <select class = "rounded border border-danger" name="" id="ageSelect">
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Over65">Over 65</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <button type="button" class = "text-white fs-5 rounded py-1 px-2 border border-success bg-success" id = "generateBtn">
+                            Genera
+                        </button>
+                        <button type="button" class = "text-white fs-5 rounded py-1 px-2 border border-danger bg-danger">
+                            Annulla
+                        </button>
+                    </div>
                 </form>
-
-                    
             </div>
             <div class="biglietto">
 
